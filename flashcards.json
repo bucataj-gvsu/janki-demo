@@ -1,0 +1,858 @@
+{
+"user": "bucataj",
+"profile": "Japanese #1",
+"decks": [
+	"Vocabulary",
+	"Hiragana",
+	"Katakana"
+],
+"note_types": {
+	"Vocab": {
+		"key_field": "Romaji",
+		"fields": [
+			{"field_name": "Japanese", "field_type": "string"},
+			{"field_name": "Romaji", "field_type": "string"},
+			{"field_name": "Meaning", "field_type": "string"},
+			{"field_name": "Mnemonic", "field_type": "textarea"},
+			{"field_name": "Notes", "field_type": "textarea"}
+		],
+		"card_types": {
+			"Japanese2English": {
+				"front": "<div class=\"japanese\">{Japanese}</div><div>What does it mean?</div>",
+				"back": "<div>{Romaji}</div><div>{Meaning}</div><br><div>{Mnemonic}</div><br><div>{Notes}</div>"
+			},
+			"Romaji2English": {
+				"front": "<div>{Romaji}</div><div>What does it mean?</div>",
+				"back": "<div class=\"japanese\">{Japanese}</div><div>{Meaning}</div><br><div>{Mnemonic}</div><br><div>{Notes}</div>"
+			},
+			"English2Romaji": {
+				"front": "<div>{Meaning}</div><div>What is the romaji?</div>",
+				"back": "</div>{Romaji}</div><br><div>{Mnemonic}</div><br><div>{Notes}</div>"
+			}
+		}
+	},
+	"Kana": {
+		"key_field": "Romaji",
+		"fields": [
+			{"field_name": "KanaType", "field_type": "string"},
+			{"field_name": "Kana", "field_type": "string"},
+			{"field_name": "Romaji", "field_type": "string"}
+		],
+		"card_types": {
+			"Romaji2Kana": {
+				"front": "<div>{Romaji}</div><div>What is the {KanaType}?</div>",
+				"back": "<div class=\"japanese\">{Kana}</div>"
+			},
+			"Kana2Romaji": {
+				"front": "<div class=\"japanese\">{Kana}</div><div>What is the romaji?</div>",
+				"back": "<div>{Romaji}</div>"
+			}
+		}
+	}
+},
+"notes": [
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"硫黄", "Romaji":"iou", "Meaning":"sulfur", "Mnemonic":"Jupiter's moon Io has sulfur volcanoes!", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	},
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"危ない", "Romaji":"abunai", "Meaning":"dangerous", "Mnemonic":"", "Notes":"Pythagoraswitch: quick-disconnect power cord on teapot 「危なくない」"},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"消しゴム", "Romaji":"keshigomu", "Meaning":"eraser", "Mnemonic":"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"消える", "Romaji":"kieru", "Meaning":"to disappear", "Mnemonic":"The Tardis disappeared with the tree branches still leaning up against it!  Only the Doctor has the .key. to make it turn to .air.", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"相槌", "Romaji":"aizuchi", "Meaning":"conversational feedback", "Mnemonic":"", "Notes":"refers to the short words or phrases like \"uh-huh,\" \"yeah,\" and \"I see\" people usually use in conversation just to reassure others"},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"青", "Romaji":"ao", "Meaning":"the color blue", "Mnemonic":"I put an antenna on the moon, but got a bruise as a result.  Ow!", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"大学院生", "Romaji":"daigakuinsei", "Meaning":"graduate student", "Mnemonic":"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"大丈夫", "Romaji":"daijoubu", "Meaning":"OK", "Mnemonic":".OK., I guess I have to learn three different but very similar kanji all at once, then...", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "review", "due_time": 1587522297735 }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"映画", "Romaji":"eiga", "Meaning":"movie", "Mnemonic":"Our classroom had two projector screens: A portable one that looked like an easel (it's next to the window), and a newer one that's built into the ceiling and pulls down in front of the wall. We watched movies about Chuck Yeager.", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"午前", "Romaji":"gozen", "Meaning":"A.M.", "Mnemonic":"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"午後", "Romaji":"gogo", "Meaning":"P.M.", "Mnemonic":"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"半分", "Romaji":"hambun", "Meaning":"half", "Mnemonic":"Cut the hamburger bun in half", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"花", "Romaji":"hana", "Meaning":"flower", "Mnemonic":"", "Notes":"versus 鼻 \"nose\""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"行く", "Romaji":"iku", "Meaning":"to go", "Mnemonic":"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"今", "Romaji":"ima", "Meaning":"now", "Mnemonic":"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"可愛い", "Romaji":"kawaii", "Meaning":"cute", "Mnemonic":"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"心", "Romaji":"kokoro", "Meaning":"heart", "Mnemonic":"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"氷", "Romaji":"koori", "Meaning":"ice", "Mnemonic":"getting a core sample from the Antarctic ice", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"お持て成し", "Romaji":"omotenashi", "Meaning":"hospitality", "Mnemonic":"", "Notes":"2020 Olympics"},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"先生", "Romaji":"sensei", "Meaning":"teacher", "Mnemonic":"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "review", "due_time": 1587622297735 }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"食べる", "Romaji":"taberu", "Meaning":"to eat", "Mnemonic":"\"table\"", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+	{"note_type": "Vocab",
+	  "note_fields": {"Japanese":"忘れる", "Romaji":"wasureru", "Meaning":"to forget", "Mnemonic":"I forgot the pot boiling on the stove!", "Notes":""},
+	  "card_status": { "Japanese2English": { "deck": "Vocabulary", "state": "new" }, "Romaji2English": { "deck": "Vocabulary", "state": "new" }, "English2Romaji": { "deck": "Vocabulary", "state": "new" } }
+	  },
+
+
+
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"あ", "Romaji":"a" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"い", "Romaji":"i" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"う", "Romaji":"u" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"え", "Romaji":"e" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"お", "Romaji":"o" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"か", "Romaji":"ka" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"き", "Romaji":"ki" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"く", "Romaji":"ku" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"け", "Romaji":"ke" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"こ", "Romaji":"ko" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"さ", "Romaji":"sa" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"し", "Romaji":"shi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"す", "Romaji":"su" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"せ", "Romaji":"se" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"そ", "Romaji":"so" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"た", "Romaji":"ta" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ち", "Romaji":"chi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"つ", "Romaji":"tsu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"て", "Romaji":"te" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"と", "Romaji":"to" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"な", "Romaji":"na" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"に", "Romaji":"ni" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぬ", "Romaji":"nu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ね", "Romaji":"ne" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"の", "Romaji":"no" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"は", "Romaji":"ha" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ひ", "Romaji":"hi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ふ", "Romaji":"fu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"へ", "Romaji":"he" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ほ", "Romaji":"ho" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ま", "Romaji":"ma" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"み", "Romaji":"mi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"む", "Romaji":"mu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"め", "Romaji":"me" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"も", "Romaji":"mo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"や", "Romaji":"ya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ゆ", "Romaji":"yu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"よ", "Romaji":"yo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ら", "Romaji":"ra" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"り", "Romaji":"ri" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"る", "Romaji":"ru" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"れ", "Romaji":"re" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ろ", "Romaji":"ro" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"わ", "Romaji":"wa" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"を", "Romaji":"wo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ん", "Romaji":"n" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"が", "Romaji":"ga" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぎ", "Romaji":"gi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぐ", "Romaji":"gu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"げ", "Romaji":"ge" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ご", "Romaji":"go" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ざ", "Romaji":"za" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"じ", "Romaji":"ji" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ず", "Romaji":"zu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぜ", "Romaji":"ze" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぞ", "Romaji":"zo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"だ", "Romaji":"da" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぢ", "Romaji":"ji" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"づ", "Romaji":"zu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"で", "Romaji":"de" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ど", "Romaji":"do" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ば", "Romaji":"ba" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"び", "Romaji":"bi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぶ", "Romaji":"bu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"べ", "Romaji":"be" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぼ", "Romaji":"bo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぱ", "Romaji":"pa" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぴ", "Romaji":"pi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぷ", "Romaji":"pu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぺ", "Romaji":"pe" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぽ", "Romaji":"po " },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"きゃ", "Romaji":"kya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"きゅ", "Romaji":"kyu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"きょ", "Romaji":"kyo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"しゃ", "Romaji":"sha" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"しゅ", "Romaji":"shu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"しょ", "Romaji":"sho" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ちゃ", "Romaji":"cha" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ちゅ", "Romaji":"chu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ちょ", "Romaji":"cho" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"にゃ", "Romaji":"nya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"にゅ", "Romaji":"nyu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"にょ", "Romaji":"nyo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ひゃ", "Romaji":"hya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ひゅ", "Romaji":"hyu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ひょ", "Romaji":"hyo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"みゃ", "Romaji":"mya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"みゅ", "Romaji":"myu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"みょ", "Romaji":"myo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"りゃ", "Romaji":"rya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"りゅ", "Romaji":"ryu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"りょ", "Romaji":"ryo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぎゃ", "Romaji":"gya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぎゅ", "Romaji":"gyu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぎょ", "Romaji":"gyo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"じゃ", "Romaji":"ja" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"じゅ", "Romaji":"ju" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"じょ", "Romaji":"jo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぢゃ", "Romaji":"ja" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぢゅ", "Romaji":"ju" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぢょ", "Romaji":"jo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"びゃ", "Romaji":"bya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"びゅ", "Romaji":"byu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"びょ", "Romaji":"byo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぴゃ", "Romaji":"pya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぴゅ", "Romaji":"pyu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"hiragana", "Kana":"ぴょ", "Romaji":"pyo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Hiragana", "state": "new" }, "Kana2Romaji": { "deck": "Hiragana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ア", "Romaji":"a" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"イ", "Romaji":"i" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ウ", "Romaji":"u" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"エ", "Romaji":"e" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"オ", "Romaji":"o" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"カ", "Romaji":"ka" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ガ", "Romaji":"ga" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"キ", "Romaji":"ki" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ギ", "Romaji":"gi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ク", "Romaji":"ku" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"グ", "Romaji":"gu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ケ", "Romaji":"ke" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ゲ", "Romaji":"ge" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"コ", "Romaji":"ko" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ゴ", "Romaji":"go" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"サ", "Romaji":"sa" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ザ", "Romaji":"za" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"シ", "Romaji":"shi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ジ", "Romaji":"zi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ス", "Romaji":"su" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ズ", "Romaji":"zu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"セ", "Romaji":"se" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ゼ", "Romaji":"ze" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ソ", "Romaji":"so" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ゾ", "Romaji":"zo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"タ", "Romaji":"ta" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ダ", "Romaji":"da" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"チ", "Romaji":"ti" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ヂ", "Romaji":"di" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ツ", "Romaji":"tu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ヅ", "Romaji":"du" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"テ", "Romaji":"te" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"デ", "Romaji":"de" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ト", "Romaji":"to" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ド", "Romaji":"do" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ナ", "Romaji":"na" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ニ", "Romaji":"ni" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ヌ", "Romaji":"nu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ネ", "Romaji":"ne" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ノ", "Romaji":"no" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ハ", "Romaji":"ha" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"バ", "Romaji":"ba" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"パ", "Romaji":"pa" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ヒ", "Romaji":"hi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ビ", "Romaji":"bi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ピ", "Romaji":"pi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"フ", "Romaji":"hu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ブ", "Romaji":"bu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"プ", "Romaji":"pu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ヘ", "Romaji":"he" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ベ", "Romaji":"be" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ペ", "Romaji":"pe" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ホ", "Romaji":"ho" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ボ", "Romaji":"bo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ポ", "Romaji":"po" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"マ", "Romaji":"ma" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ミ", "Romaji":"mi" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ム", "Romaji":"mu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"メ", "Romaji":"me" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"モ", "Romaji":"mo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ヤ", "Romaji":"ya" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ユ", "Romaji":"yu" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ヨ", "Romaji":"yo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ラ", "Romaji":"ra" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"リ", "Romaji":"ri" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ル", "Romaji":"ru" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"レ", "Romaji":"re" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ロ", "Romaji":"ro" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ワ", "Romaji":"wa" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ヲ", "Romaji":"wo" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  },
+	{"note_type": "Kana",
+	  "note_fields": { "KanaType":"katakana", "Kana":"ン", "Romaji":"n" },
+	  "card_status": { "Romaji2Kana": { "deck": "Katakana", "state": "new" }, "Kana2Romaji": { "deck": "Katakana", "state": "new" } }
+	  }
+]
+}
